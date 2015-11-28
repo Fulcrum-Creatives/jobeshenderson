@@ -12,14 +12,18 @@ $aside-width: span(3);
 // Colors
 //================================================================================
 // text colors
-$color__font: #333;
-$color__header: #333;
+$color__font: #5f5f5f;
+$color__header: #5f5f5f;
 // link colors
-$color__link: #333;
-$color__link-hover: #333;
-$color__link-visited: #333;
+$color__link: #7a9db1;
+$color__link-hover: lighten( #7a9db1, 15% );
+$color__link-visited: darken( #7a9db1, 15% );
 // color pallete
-
+$red: #a51d4b;
+$blue: #9ab4c3;
+$off-white: #ebf0f4;
+$blue-grey: #8facbe;
+$drk-blue-grey: #7a9db1;
 
 // Typography
 //================================================================================
@@ -39,13 +43,7 @@ $font-size__h6: 0.67 * $font-size__base !default;
 @function em($pixels, $context: $font-size__base) {
     @return #{$pixels/$context}em;
 }
-$phone: em(480);
-$tablet: em(768);
-$desktop: em(1024);
-$breakpoints: (phone: $phone, tablet: $tablet, desktop: $desktop) !default;
-$media-expressions: (all: "all",
-					 print: "print", 
-					 screen: "screen",
-                     retina2x: ("(min-device-pixel-ratio: 2)", "(min-resolution: 192dpi)"), 
-                     retina3x: ("(min-device-pixel-ratio: 3)", "(min-resolution: 350dpi)")
-                    ) !default;
+$phone_port: em(320);
+$phone_land: em(480);
+$tablet_port: em(768);
+$tablet_land: em(1024);

@@ -1,0 +1,55 @@
+/* Page Info Box
+================================================================================*/
+.infobox {
+	overflow: hidden;
+	background-color: $drk-blue-grey;
+	padding: 1em 0;
+	position: relative;
+  	top: -4px;
+  	color: #fff;
+  	.col__left {
+  		padding-left: 1em;
+  		padding-right: 1em;
+  		@include media-query( 820px ) {
+  			padding-left: 3em;
+  			padding-right: 0;
+		}
+  	}
+  	.col__right {
+  		padding-left: 1em;
+  		padding-right: 1em;
+  		@include media-query( 820px ) {
+  			padding-right: 3em;
+  			padding-left: 0;
+		}
+  	}
+  	a {
+  		color: darken( #fff, 15% );
+  	}
+}
+.infobox-heading {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.infobox__body {
+	@extend .museo-500;
+	margin-bottom: 1em;
+}
+.infobox__button {
+	margin-top: 1em;
+	text-transform: uppercase;
+	a {
+		display: block-inline;
+		padding: 0.8em 1.5em;
+		border: 1px solid #fff;
+		background-color: #fff;
+		transition: color 0.5s ease, border-color 0.5s ease, background-color 0.5s ease;
+		@include font-size(13);
+		@extend .museo-300;
+		&:hover {
+			border-color: darken( #fff, 25% );
+			background-color: lighten( #fff, 55% );
+			transition: color 1s ease, border-color 1s ease, background-color 1s ease;
+		}
+	}
+}

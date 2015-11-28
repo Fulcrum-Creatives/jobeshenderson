@@ -1,0 +1,86 @@
+/* Widgets
+================================================================================*/
+.widget-area {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.widget {
+	@extend .section__header;
+	margin-bottom: 1.5em;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.widgettitle {
+	@extend .section__heading;
+}
+.widget__more {
+	@extend .section__more;
+}
+.widget__body,
+.really_simple_twitter_widget,
+.textwidget {
+	padding-top: 2em;
+	clear: both;
+}
+.featured-projects {
+	margin: 0 auto 2em;
+	padding: 0;
+	position: relative;
+	width: 353px;
+	max-width: 100%;
+	height: 172px;
+	max-height: 100%;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 4;
+	}
+}
+.featured-projects__caption {
+	height: 76px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	picture {
+		height: 0px;
+	}
+	.overlay {
+		background-color: $blue;
+		opacity: 0.7;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+.featured-projects__text {
+	color: #fff;
+	z-index: 3;
+	padding: 0 1em;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	@extend .helvetica-bold;
+  	text-align: center;
+  	@include font-size(21);
+  	letter-spacing: 1px;
+}
+.really_simple_twitter_widget {
+	list-style-type: none;
+	padding: 2em 0 0;
+	li {
+		margin: 0.5em 0;
+	}
+}

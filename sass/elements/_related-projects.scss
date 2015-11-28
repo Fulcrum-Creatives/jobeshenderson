@@ -1,0 +1,44 @@
+/* Related Projects
+================================================================================*/
+.related-projects {
+	clear: both;
+	overflow: hidden;
+}
+.related-projects__title {
+	margin-bottom: 2em;
+}
+.ft-project {
+	width: 353px;
+	max-width: 100%;
+	height: auto;
+	float: none;
+	margin: 0 auto 1em;
+	@include media-query( 820px ) {
+		width: 50%;
+		max-width: none;
+		float: left;
+		height: 360px;
+	}
+	&.odd {
+		padding-right: 0;
+		@include media-query( 820px ) {
+			padding-right: 1em;
+		}
+	}
+	&.even {
+		padding-left: 0;
+		@include media-query( 820px ) {
+			padding-left: 1em;
+		}
+	}
+}
+.ft-project__thumb {
+	width: 353px;
+	max-width: 100%;
+	max-height: 172px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

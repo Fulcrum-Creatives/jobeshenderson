@@ -56,23 +56,6 @@
 @mixin media-query($beakpoint){
 	@media screen and (min-width: $beakpoint) { @content }
 }
-@mixin media($conditions...) {
-	$i: 1;
-	@each $condition in $conditions {
-		$conditions: set-nth($conditions, $i, parse-expression(nth($conditions, $i)));
-		$i: $i + 1;
-	}
-	$branches: get-query-branches($conditions);
-	$query: "";
-	@each $branch in $branches {
-		@if ($query != "") {
-			$query: $query + ", ";
-		}
-		$query: $query + $branch;
-	}
-
-	@media #{$query} { @content; }
-}
 
 // Opactity
 //================================================================================

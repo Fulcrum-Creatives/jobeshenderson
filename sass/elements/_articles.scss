@@ -1,0 +1,39 @@
+/* Article
+================================================================================*/
+.entry {
+	padding-bottom: 0.5em;
+	.entry__heading {
+		a {
+			color: $blue-grey;
+			transition: color 0.5s ease;
+			text-decoration: none;
+			@extend .azo-regular;
+			@include font-size(18);
+			&:hover {
+				color: darken( $blue-grey, 25% );
+				transition: color 1s ease;
+			}
+		}
+	}
+	p {
+
+	}
+	.entry__more {
+		a {
+			display: block-inline;
+			padding: 0.5em 1.5em;
+			color: $red;
+			border: 1px solid $red;
+			background-color: #fff;
+			transition: color 0.5s ease, border-color 0.5s ease, background-color 0.5s ease;
+			@extend .museo-500;
+			@include font-size(14);
+			&:hover {
+				color: darken( $red, 25% );
+				border-color: darken( $red, 25% );
+				background-color: lighten( $red, 55% );
+				transition: color 1s ease, border-color 1s ease, background-color 1s ease;
+			}
+		}
+	}
+}

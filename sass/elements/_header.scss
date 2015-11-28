@@ -1,0 +1,36 @@
+/* Header
+================================================================================*/
+.body__header {
+	width: 100%;
+	position: relative;
+	padding: 2em 0 0;
+	background-color: #7a9db1;
+	overflow: hidden;
+	z-index: 2;
+	@include media-query( $tablet_port ) {
+		position: absolute;
+		background-color: transparent;
+	}
+	.body__content {
+		padding: 0 0.5em;
+		@include media-query( $tablet_port ) {
+			padding: 0 3em;
+		}
+	}
+}
+.header__image {
+	margin: 0;
+}
+.header__logo {
+	text-align: center;
+	width: 100%;
+	height: 46px;
+	margin-bottom: 1.5em;
+	float: none;
+	@include media-query( $tablet_port ) {
+		text-align: left;
+		width: 135px;
+		float: left;
+		margin-bottom: 0;
+	}
+}

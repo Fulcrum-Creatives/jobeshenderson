@@ -12,3 +12,10 @@ embed  {
 .media__wrapper {
 	@include aspect-ratio(16, 9)
 }
+
+.ir {
+	font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    width: 0px;
+}

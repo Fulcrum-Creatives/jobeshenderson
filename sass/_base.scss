@@ -10,6 +10,12 @@ html {
 }
 body {
 	@include font-size($font-size__base, rem);
+	@extend .helvetica-roman;
+	color: $color__font;
+	strong,
+	b {
+		@extend .helvetica-bold;
+	}
 }
 @import "elements/accessibility";
 @import "elements/alignments";

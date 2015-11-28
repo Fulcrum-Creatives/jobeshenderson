@@ -1,0 +1,51 @@
+/* Header Text
+================================================================================*/
+.header__image {
+	position: relative;
+	.header__text {
+		position: absolute;
+	}
+	.header__text--top,
+	.header__text--bottom {
+		margin: 0;
+	}
+}
+.header__image--homepage {
+	.header__text {
+		top: 13%;
+		left: 2%;
+		color: #fff;
+		z-index: 2;
+		@include media-query( $tablet_port ) {
+			top: 25%;
+			left: 7%;
+		}
+		.header__text--top {
+			@include font-size(20);
+			margin-bottom: 0.25em;
+			font-family:'MuseoSlabW01-300Italic';
+			@include media-query( $phone_land ) {
+				@include font-size(23);
+			}
+			@include media-query( $tablet_port ) {
+				@include font-size(41);
+			}
+		}
+		.header__text--bottom {
+			@include font-size(28);
+  			margin-left: 1.5em;
+  			letter-spacing: 2px;
+  			font-family:'Azo Sans W01 Regular';
+  			@include media-query( $phone_land ) {
+				@include font-size(41);
+			}
+  			@include media-query( $tablet_port ) {
+				@include font-size(61);
+  				padding-left: 1.5em;
+			}
+			&.header__text--sub {
+				margin-left: 0;
+			}
+		}
+	}
+}

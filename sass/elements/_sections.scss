@@ -1,0 +1,49 @@
+/* Sections
+================================================================================*/
+.section__header {
+	border-top: 5px solid $red;
+	padding: 0.25em 0;
+	overflow: hidden;
+	color: $red;
+}
+.section__heading {
+	float: left;
+	@include font-size(14);
+	text-transform: uppercase;
+	font-weight: normal;
+	@extend .museo-500;
+	margin: 0.25em 0;
+}
+.section__more {
+	float: right;
+	@include font-size(14);
+	display: none;
+	text-transform: uppercase;
+	@extend .museo-500;
+	margin: 0.25em 0;
+	a {
+		text-decoration: none;
+		color: $red;
+		transition: color 0.5s ease;
+		&:hover {
+			color: darken( $red, 15% );
+			transition: color 1s ease;
+		}
+	}
+	@include media-query( 480px ) {
+		display: block;
+	}
+}
+.project__heading {
+	padding: 0.25em 0 0;
+	margin-bottom: 0.25em;
+	overflow: hidden;
+	color: $red;
+}
+.project__body {
+	padding-bottom: 0.25em;
+}
+.no-image-header {
+	height: 124px;
+	background-color: $drk-blue-grey;
+}

@@ -1,0 +1,33 @@
+/* Footer
+================================================================================*/
+.body__footer {
+	background-color: $off-white;
+	padding: 2.5em 0 ;
+	text-align: center;
+	a {
+		color: $color__font;
+		transition: color 1s ease;
+		&:hover {
+			color: darken( $color__font, 25% );
+			transition: color 1s ease;
+		}
+	}
+}
+.footer__top {
+	span,
+	address {
+		display: block;
+	}
+	.delimer {
+		display: none;
+	}
+	@include media-query( 650px ) {
+		span,
+		address {
+			display: inline-block;
+		}
+		.delimer {
+			display: inline-block;
+		}
+	}
+}

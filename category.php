@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<section id="main" itemprop="mainContentOfPage" role="main">
+<main id="main" role="main">
     <header>
-        <h1 class="page-title"><?php printf( __( 'Category: %s', DOMAIN ),  single_cat_title( '', false ) ); ?></h1>
+        <h1 class="page-title"><?php printf( __( 'Category: %s', FCWPF_TAXDOMAIN ),  single_cat_title( '', false ) ); ?></h1>
     </header>
     <?php get_template_part( 'template-parts/content/content' ); ?>
-</section>
+</main>
 <?php get_footer(); ?>
