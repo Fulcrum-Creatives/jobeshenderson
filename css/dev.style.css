@@ -4,7 +4,7 @@ Theme URI: http://jobeshenderson.com/
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Theme
-Version: 1.0.0
+Version: 1.0.1
 Tags: 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -835,7 +835,7 @@ body b, .featured-projects__text {
 .header__image--homepage .header__text {
   top: 13%;
   left: 2%;
-  color: #fff;
+  color: #fff !important;
   z-index: 2;
 }
 @media screen and (min-width: 48em) {
