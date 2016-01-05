@@ -1,11 +1,2 @@
 /* IE8 Specific Styles
 ================================================================================*/
-.body__nav--main {
-	width: 100%;
-	position: relative;
-	left: -48px;
-}
-.featured-projects__text {
-  top: 16px;
-  
-}
