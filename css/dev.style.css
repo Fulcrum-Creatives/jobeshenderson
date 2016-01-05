@@ -835,7 +835,7 @@ body b, .featured-projects__text {
 .header__image--homepage .header__text {
   top: 13%;
   left: 2%;
-  color: #fff !important;
+  color: #fff;
   z-index: 2;
 }
 @media screen and (min-width: 48em) {
@@ -843,6 +843,9 @@ body b, .featured-projects__text {
     top: 25%;
     left: 7%;
   }
+}
+.header__image--homepage .header__text a {
+  color: #fff;
 }
 .header__image--homepage .header__text .header__text--top {
   font-size: 20px;

@@ -14,11 +14,14 @@
 	.header__text {
 		top: 13%;
 		left: 2%;
-		color: #fff !important;
+		color: #fff;
 		z-index: 2;
 		@include media-query( $tablet_port ) {
 			top: 25%;
 			left: 7%;
+		}
+		a {
+			color: #fff;
 		}
 		.header__text--top {
 			@include font-size(20);
